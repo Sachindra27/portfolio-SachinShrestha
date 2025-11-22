@@ -1,38 +1,112 @@
-/*body{
-	background-color: gray;
-}*/
-.container{
-	width: 300px;
-	height: 40%;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	margin-bottom: 10px;
-}
-#project img{
-	width: 300px;
-}
-.header{
-	background-color: 2B2C7C;
-	color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.page{
-	display: flex;
-	flex-direction: row;
-	margin-right: 10px;
-	list-style: none;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Arial";
 }
-.page-content{
-	margin-right: 10px;
+
+body {
+    background-color: #F5F7FA;
+    color: #333;
+    line-height: 1.6;
 }
-.page .page-content a{
-	color: white;
-	text-decoration: none;
+
+.header {
+    background-color: #2B2C7C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-#contact{
-	background-color: 2B2C7C;
-	padding: 5px 5px 5px 5px;
-	margin-bottom: 10px;
+
+.header h1 {
+    font-size: 26px;
 }
+
+.page {
+    display: flex;
+    list-style: none;
+}
+
+.page-content {
+    margin-left: 20px;
+}
+
+.page .page-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.page .page-content a:hover {
+    color: black;
+}
+
+section {
+    width: 1000px;
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container:hover{
+	cursor: pointer;
+}
+
+#project img {
+    width: 100%;
+}
+
+#project p {
+    padding: 10px;
+}
+
+#contact input , textarea {
+	width: auto;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#contact button {
+    background-color: #2B2C7C;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;  
+}
+
+#contact button:hover {
+    background-color: #1E1F5A;
+    transition: 0.2s;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+}
+
