@@ -1,60 +1,120 @@
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
-</head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
 <body>
 
-<header>
-	<div class="header">
-		<h1>Sachin Shrestha</h1>
+    <header id="hero">
+        <video autoplay loop muted id="video-background">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        
+        <nav class="navbar">
+            <span class="logo">Sachin Shrestha</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+                ☰
+            </button>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>Sachin Shrestha</h1>
+            <p>Aspiring FullStack Developer</p>
+        </div>
+    </header>
 
-	<nav>
-	<ul class="page">
-		<li class="page-content"><a href="#about">About me</a></li>
-		<li class="page-content"><a href="#project">Projects</a></li>
-		<li class="page-content"><a href="#contact">Contact</a></li>
-	</ul>
-</nav>
-</div>
-</header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello, my name is Sachin Shrestha. I am a computer science student and an aspiring web developer 
+            passionate about creating beautiful, functional, and user-friendly websites. 
+        </p>
+    </section>
 
-<section id="about">
-	<h3>About me</h1>
-	<p>
-		Hello, My name is Sachin Shrestha. I am a computer science student and an aspiring web developer.
-	</p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-item">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="weather.png" alt="Weather App Project">
+                <div class="project-card-content">
+                    <h3>Weather App</h3>
+                    <p>This project provides real-time weather details for any location with a clean, intuitive interface.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="portfolio.png" alt="Portfolio Website">
+                <div class="project-card-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website built with HTML and CSS to showcase my projects.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="taskapp.png" alt="Task Management App">
+                <div class="project-card-content">
+                    <h3>Task Manager</h3>
+                    <p>A simple task management application that helps users organize their daily activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="project">
-	<h3> My Project</h1>
-		<div class="container">
-			<img src="project.jpg">
-			<p>This project provides us the weather details.</p>
-		</div>
-	
-</section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+            <div id="form-message"></div>
+        </form>
+    </section>
 
-<section id="contact">
-	<h3>Contact</h1>
-	<form>
-
-	<label>Name:</label>
-	<input type="text" placeholder="enter your name"><br>
-	<label>Email:</label>
-	<input type="text" placeholder="enter your email"><br>
-	<textarea name="Message" rows="2" placeholder="Message me"></textarea><br>
-	<button>Submit</button>
-
-	</form>
-	
-</section>
-
+    <footer>
+        <p>&copy; 2025 Sachin Shrestha. All rights reserved.</p>
+    </footer>
 </body>
-
-<footer>
-	&copyright; All rights reserved.
-	
-</footer>
 </html>
